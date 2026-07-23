@@ -19,6 +19,26 @@ function moveBackground(event){
 
 }
 
+function moveBackground(event) {
+    const shapes = document.querySelectorAll(".shape");
+
+    let x, y;
+
+    if (event.touches) {
+        x = event.touches[0].clientX * scaleFactor;
+        y = event.touches[0].clientY * scaleFactor;
+    } else {
+        x = event.clientX * scaleFactor;
+        y = event.clientY * scaleFactor;
+    }
+
+    for (let i = 0; i < shapes.length; i++) {
+        const direction = i % 2 === 0 ? 1 : -1;
+        shapes[i].style.transform =
+            `translate(${x * direction}px, ${y * direction}px)`;
+    }
+}
+
 function toggleContrast(){
     contrastToggle = !contrastToggle;
     if (contrastToggle){
@@ -54,3 +74,5 @@ function toggleModal() {
     document.body.classList += " modal--open";
 }
 
+document.addEventListener("mousemove", moveBackground);
+document.addEventListener("touchmove", moveBackground);
