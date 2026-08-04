@@ -532,7 +532,7 @@ Projects
 .project__wrapper{
     position: relative;
     border-radius: 20px;
-    box-shadow: 0 20px 80px 0 rgb(0,0,0,0,45);
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
     overflow: hidden;
     margin-bottom: 120px;
 }
@@ -734,6 +734,20 @@ width = 80vw
         font-size: 14px;
     }
 
+    .project__description {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+
+    .project__wrapper--bg {
+        opacity: 0.7;
+        visibility: visible;
+    }
+
+    .project__img {
+        filter: blur(5px);
+    }
+
 }
 
 /* Small phones*/
@@ -783,6 +797,20 @@ width = 80vw
     .modal__half{
         padding: 40px;
     }
+
+    .project__description {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+
+    .project__wrapper--bg {
+        opacity: 0.7;
+        visibility: visible;
+    }
+
+    .project__img {
+        filter: blur(5px);
+    }
 }
 
 @media only screen and (max-width: 480px){
@@ -828,5 +856,19 @@ width = 80vw
 
     .modal__half{
         padding: 40px;
+    }
+
+    .project__description {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+
+    .project__wrapper--bg {
+        opacity: 0.7;
+        visibility: visible;
+    }
+
+    .project__img {
+        filter: blur(5px);
     }
 }
