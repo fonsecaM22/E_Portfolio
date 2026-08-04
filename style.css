@@ -584,11 +584,15 @@ Projects
     margin-top: 8px;
 }
 
-.project__description--link{
+.project__description--links{
     color: white;
     font-size: 20px;
-    margin-right: 16px;
 }
+
+.fa-film{
+    color: white;
+}
+
 
 .project__description--para{
     margin: 16px 0;
