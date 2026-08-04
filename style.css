@@ -706,7 +706,7 @@ width = 80vw
         font-size: 80px;
     }
     .header__para{
-        font-size: 20px;
+        font-size: 16px;
     }
     .modal{
         top: 0;
@@ -722,11 +722,23 @@ width = 80vw
         width: 100%;
     }
 
+    .project__description{
+        padding: 0 8px;
+    }
+
+    .project__description--title{
+        font-size: 40px;
+    }
+
+    .project__description--para{
+        font-size: 14px;
+    }
+
 }
 
 /* Small phones*/
 
-@media (max: 480px){
+@media (max-width: 574px){
     .title{
         font-size: 52px;
     }
@@ -736,8 +748,18 @@ width = 80vw
     .nav__link:first-child{
         display: none;
     }
+
+    .project__description--title{
+        padding-top: 24px;
+        font-size: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
     .project__description--para{
-        display: none;
+        font-size: 14px;
+        padding: 0 24px;
     }
     .project__description{
         left: 0;
@@ -745,7 +767,62 @@ width = 80vw
         width: 100%;
     }
     .project__description--sub-title{
+        font-size: 16px;
         margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__description--links{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 24px;
+    }
+
+    .modal__half{
+        padding: 40px;
+    }
+}
+
+@media (max-width: 402px){
+    .title{
+        font-size: 52px;
+    }
+    .header__para{
+        font-size: 18px;
+    }
+    .nav__link:first-child{
+        display: none;
+    }
+
+    .project__description--title{
+        padding-top: 24px;
+        font-size: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+    .project__description--para{
+        font-size: 14px;
+        padding: 0 24px;
+    }
+    .project__description{
+        left: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .project__description--sub-title{
+        font-size: 16px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__description--links{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 24px;
     }
 
     .modal__half{
