@@ -772,9 +772,7 @@ width = 80vw
 
     }
     .project__description--para{
-        text-align: center;
-        font-size: 14px;
-        padding: 0 24px;
+        display: none;
     }
     .project__description{
         left: 0;
@@ -833,8 +831,7 @@ width = 80vw
 
     }
     .project__description--para{
-        font-size: 14px;
-        padding: 0 24px;
+        display: none;
     }
     .project__description{
         left: 0;
