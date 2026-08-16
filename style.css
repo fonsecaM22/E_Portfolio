@@ -593,6 +593,10 @@ Projects
     color: white;
 }
 
+.fa-mug-hot{
+    text-decoration: none;
+}
+
 
 .project__description--para{
     margin: 16px 0;
