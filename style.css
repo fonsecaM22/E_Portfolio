@@ -593,8 +593,9 @@ Projects
     color: white;
 }
 
-.fa-mug-hot{
-    text-decoration: none;
+.fa-mug-hot,
+.fa-link{
+    color: white;
 }
 
 
